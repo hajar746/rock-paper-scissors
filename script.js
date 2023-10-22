@@ -33,13 +33,11 @@ function playRound(playerSelection, compSelection) {
 
 // playing the game for 5 rounds
 function game() {
-  for (let i = 0; i < 5; i++) {
-    // get players choice
-    playerSelection = prompt(`Welcome to Rock Paper Scissors!
+  // get players choice
+  playerSelection = prompt(`Welcome to Rock Paper Scissors!
     Please enter either rock, paper or scissors.`).toLowerCase();
-    compSelection = getComputerChoice();
-    console.log(playRound(playerSelection, compSelection));
-  }
+  compSelection = getComputerChoice();
+  console.log(playRound(playerSelection, compSelection));
 
   // deciding who is the winner
   if (playerScore > compScore) {
@@ -50,3 +48,12 @@ function game() {
     ("The game is a tie!");
   }
 }
+
+// start game
+const startBtn = document.querySelector(".btn-start");
+const gamePage = document.querySelector(".main");
+
+startBtn.addEventListener("click", () => {
+  document.querySelector(".center").classList.add("hidden");
+  gamePage.classList.remove("hidden");
+});

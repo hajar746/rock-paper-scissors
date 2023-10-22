@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  background-color: #264653;
+}
+
+/* START NEW GAME PAGE */
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-home {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.game-title {
+  font-size: 3rem;
+  color: #f1faee;
+  font-weight: 300;
+}
+
+.btn-start {
+  font-size: 1.7rem;
+  padding: 1.3rem 1rem;
+  background-color: #f4a261;
+  border: none;
+  box-shadow: 7px 7px #9e693e;
+  cursor: pointer;
+}
+
+.btn-start:hover {
+  background-color: #eead78;
+  transform: translateY(0.3rem);
+  box-shadow: 5px 5px #9e693e;
+  transition: all 0.2s ease-in;
+}
+
+.r-p-s {
+  align-self: center;
+  height: 100px;
+  width: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* PLAY */
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  margin: 0 3rem;
+  color: #f1faee;
+  font-weight: 300;
+}
+
+.choice {
+}
+
+.choices {
+  display: flex;
+}
+
+.rock,
+.paper,
+.scissor {
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
