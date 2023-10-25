@@ -88,12 +88,12 @@ choices.addEventListener("click", function (e) {
 
 // function to check who is the winner
 const checkWinner = function () {
-  if (+you.textContent === 3) {
+  if (+you.textContent === 5) {
     const html = `<h2 class="score win">YOU WIN!</h2>`;
     score.insertAdjacentHTML("afterbegin", html);
     btnPlayAgain.classList.remove("hidden");
   }
-  if (+computer.textContent == 3) {
+  if (+computer.textContent == 5) {
     const html = `<h2 class="score lose">YOU LOSE!</h2> `;
     score.insertAdjacentHTML("afterbegin", html);
     btnPlayAgain.classList.remove("hidden");
