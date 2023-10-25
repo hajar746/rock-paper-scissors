@@ -24,7 +24,7 @@ const btnPlayAgain = document.querySelector(".btn-playagain");
 
 // start game(hide page)
 startBtn.addEventListener("click", () => {
-  document.querySelector(".center").classList.add("hidden");
+  document.querySelector(".game-new").classList.add("hidden");
   gamePage.classList.remove("hidden");
 });
 
