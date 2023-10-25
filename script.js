@@ -98,7 +98,7 @@ const checkWinner = function () {
     score.insertAdjacentHTML("afterbegin", html);
     btnPlayAgain.classList.remove("hidden");
   }
-  if (+you.textContent === +computer.textContent && +you.textContent === 3) {
+  if (+you.textContent === +computer.textContent && +you.textContent === 5) {
     const html = `<h2 class="score tie">IT'S A TIE!</h2>`;
     score.insertAdjacentHTML("afterbegin", html);
     btnPlayAgain.classList.remove("hidden");
